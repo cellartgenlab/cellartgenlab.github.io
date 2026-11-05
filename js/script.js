@@ -269,29 +269,77 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     // =====================================
-    // 8. CONTACT FORM VALIDATION
-    // Does not send emails by itself
-    // =====================================
+// 8. CONTACT FORM VALIDATION
+// =====================================
 
-    document.querySelectorAll("form").forEach(function (form) {
+document.querySelectorAll("form").forEach(function (form) {
 
-        form.addEventListener("submit", function (event) {
+    form.addEventListener("submit", function (event) {
 
-            if (!form.checkValidity()) {
-                event.preventDefault();
-                form.reportValidity();
-                return;
-            }
-
-            // A real backend or form service is required
-            // to deliver submitted enquiries by email.
-
-        });
+        if (!form.checkValidity()) {
+            event.preventDefault();
+            form.reportValidity();
+        }
 
     });
 
 });
 
+// HOME CONTACT FORM - MONGODB SUBMISSION
+// =====================================
+
+const homeContactForm = document.getElementById("homeContactForm");
+
+if (homeContactForm) {
+
+    homeContactForm.addEventListener("submit", async function (event) {
+
+        event.preventDefault();
+
+        const status = document.getElementById("homeContactStatus");
+        const button = homeContactForm.querySelector('button[type="submit"]');
+
+        const data = Object.fromEntries(
+            new FormData(homeContactForm).entries()
+        );
+
+        status.textContent = "Sending...";
+        button.disabled = true;
+
+        try {
+
+            const response = await fetch("/api/enquiries", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
+            });
+
+            const result = await response.json();
+
+            if (!response.ok) {
+                throw new Error(result.error || "Submission failed.");
+            }
+
+            status.textContent = "Thank you! Your enquiry has been submitted.";
+            homeContactForm.reset();
+
+        } catch (error) {
+
+            status.textContent = error.message || "Please try again.";
+
+        } finally {
+
+            button.disabled = false;
+
+        }
+
+    });
+
+}
+
+});
 
 
 

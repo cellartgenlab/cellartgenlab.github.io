@@ -1,0 +1,1386 @@
+
+.pharma-page {
+    padding-top: 94px;
+    color: #173b60;
+    font-family: 'Inter', sans-serif;
+}
+
+.pharma-hero {
+    min-height: 510px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 45px;
+    padding: 65px 8%;
+    background: linear-gradient(120deg,#f1f9ff,#ffffff,#eaf6ff);
+    overflow: hidden;
+}
+
+.pharma-kicker,
+.pharma-section-heading span,
+.pharma-process-content > span,
+.pharma-quality > span,
+.pharma-enquiry span {
+    color: #0782ca;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.pharma-hero h1 {
+    font-size: clamp(36px,4.5vw,64px);
+    line-height: 1.1;
+    color: #073d78;
+    margin: 22px 0;
+}
+
+.pharma-hero-content p {
+    color: #62768b;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 580px;
+}
+
+.pharma-hero-image img,
+.pharma-process-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 22px;
+    box-shadow: 0 18px 50px rgba(7,58,112,.14);
+}
+
+.pharma-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 28px;
+}
+
+.pharma-btn,
+.pharma-outline-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 23px;
+    border-radius: 7px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.pharma-btn {
+    background: linear-gradient(100deg,#0878d1,#35b932);
+    color: white;
+}
+
+.pharma-outline-btn {
+    color: #0878d1;
+    border: 1px solid #0878d1;
+}
+
+.pharma-btn:hover,
+.pharma-outline-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(8,120,209,.2);
+}
+
+.pharma-overview {
+    padding: 90px 8%;
+}
+
+.pharma-section-heading {
+    max-width: 800px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.pharma-section-heading h2,
+.pharma-process-content h2,
+.pharma-quality h2 {
+    color: #073d78;
+    font-size: clamp(28px,3vw,42px);
+    margin: 17px 0;
+}
+
+.pharma-section-heading p,
+.pharma-process-content p,
+.pharma-quality > p {
+    color: #687c90;
+    line-height: 1.9;
+}
+
+.pharma-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 23px;
+}
+
+.pharma-feature-card {
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #e7eef5;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(7,58,112,.06);
+    transition: .3s ease;
+}
+
+.pharma-feature-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(7,58,112,.12);
+}
+
+.pharma-feature-card i {
+    font-size: 28px;
+    color: #1687cb;
+    margin-bottom: 17px;
+}
+
+.pharma-feature-card h3 {
+    color: #073d78;
+    font-size: 19px;
+}
+
+.pharma-feature-card p {
+    color: #718196;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.pharma-process {
+    padding: 80px 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 55px;
+    background: #f4f9fd;
+}
+
+.pharma-process-content ul {
+    padding-left: 20px;
+    color: #536b82;
+    line-height: 2.2;
+}
+
+.pharma-quality {
+    text-align: center;
+    padding: 85px 8%;
+}
+
+.pharma-quality > p {
+    max-width: 780px;
+    margin: auto;
+}
+
+.pharma-quality-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.pharma-quality-grid > div {
+    padding: 30px;
+    border-radius: 14px;
+    background: #f5faff;
+}
+
+.pharma-quality-grid i {
+    color: #1487c9;
+    font-size: 32px;
+}
+
+.pharma-quality-grid h3 {
+    color: #073d78;
+}
+
+.pharma-quality-grid p {
+    color: #718196;
+    line-height: 1.7;
+}
+
+.pharma-enquiry {
+    margin: 30px 8% 80px;
+    padding: 45px;
+    border-radius: 20px;
+    background: linear-gradient(110deg,#073d78,#0878d1);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.pharma-enquiry span,
+.pharma-enquiry h2,
+.pharma-enquiry p {
+    color: white;
+}
+
+.pharma-enquiry h2 {
+    font-size: 30px;
+}
+
+.pharma-enquiry p {
+    line-height: 1.7;
+}
+
+.pharma-enquiry .pharma-btn {
+    background: white;
+    color: #0878d1;
+    white-space: nowrap;
+}
+
+.pharma-copyright {
+    padding: 20px;
+    text-align: center;
+    color: #74859a;
+    border-top: 1px solid #e8edf2;
+}
+
+.cgen-footer-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    gap: 35px;
+    padding: 55px 8%;
+    background: #062b51;
+    color: white;
+}
+
+.cgen-footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cgen-footer-col a {
+    color: #d8e8f7;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.cgen-footer-col h3 {
+    color: white;
+}
+
+@media(max-width:900px) {
+    .pharma-hero,
+    .pharma-process {
+        grid-template-columns: 1fr;
+    }
+
+    .pharma-feature-grid,
+    .pharma-quality-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .pharma-enquiry {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media(max-width:600px) {
+    .pharma-page {
+        padding-top: 78px;
+    }
+
+    .pharma-hero,
+    .pharma-overview,
+    .pharma-process,
+    .pharma-quality {
+        padding: 45px 6%;
+    }
+
+    .pharma-hero-image img,
+    .pharma-process-image img {
+        height: 260px;
+    }
+
+    .pharma-feature-grid,
+    .pharma-quality-grid,
+    .cgen-footer-main {
+        grid-template-columns: 1fr;
+    }
+
+    .pharma-enquiry {
+        margin: 15px 5% 50px;
+        padding: 28px;
+    }
+}
+
+
+
+
+/* TABLET MANUFACTURING EXTENDED CONTENT */
+
+.tablet-manufacturing-page .pharma-text-section {
+    padding: 65px 9%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.tablet-manufacturing-page .pharma-text-section h2 {
+    font-size: 34px;
+    color: #073d78;
+    margin: 16px 0;
+}
+
+.tablet-manufacturing-page .pharma-text-section p {
+    font-size: 16px;
+    line-height: 2;
+    color: #62768b;
+}
+
+.tablet-manufacturing-page .pharma-text-section strong {
+    display: block;
+    margin-top: 18px;
+    color: #164d7c;
+}
+
+.tablet-manufacturing-page .light-section {
+    max-width: none;
+    background: #f3f9fd;
+}
+
+.tablet-manufacturing-page .pharma-faq {
+    padding: 80px 9%;
+    background: #f4f9fd;
+}
+
+.tablet-manufacturing-page .pharma-faq details {
+    max-width: 950px;
+    margin: 12px auto;
+    padding: 22px 25px;
+    background: white;
+    border: 1px solid #e4edf5;
+    border-radius: 10px;
+}
+
+.tablet-manufacturing-page .pharma-faq summary {
+    cursor: pointer;
+    color: #073d78;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.tablet-manufacturing-page .pharma-faq details p {
+    color: #64778b;
+    line-height: 1.8;
+    margin-top: 15px;
+}
+
+.tablet-manufacturing-page .tablet-types ul {
+    line-height: 2.2;
+}
+
+@media(max-width:650px) {
+    .tablet-manufacturing-page .pharma-text-section {
+        padding: 45px 6%;
+    }
+
+    .tablet-manufacturing-page .pharma-text-section h2 {
+        font-size: 27px;
+    }
+
+    .tablet-manufacturing-page .pharma-faq {
+        padding: 50px 5%;
+    }
+}
+
+
+
+/* CAPSULE MANUFACTURING PAGE - CSS FIX */
+
+.pharma-section {
+    padding: 75px 8%;
+    background: #ffffff;
+    color: #173b60;
+}
+
+.pharma-section.light-bg {
+    background: #f3f9fd;
+}
+
+.pharma-section .eyebrow {
+    color: #0782ca;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.pharma-section h2 {
+    color: #073d78;
+    font-size: clamp(28px, 3vw, 42px);
+    margin: 18px 0;
+}
+
+.pharma-section p {
+    color: #62768b;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.pharma-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 35px;
+}
+
+.pharma-card {
+    background: #ffffff;
+    border: 1px solid #e4edf5;
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 8px 30px rgba(7,58,112,.06);
+    transition: .3s ease;
+}
+
+.pharma-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(7,58,112,.12);
+}
+
+.pharma-card h3 {
+    color: #073d78;
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.pharma-card p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.pharma-hero {
+    display: flex;
+    align-items: center;
+    min-height: 480px;
+    padding: 70px 8%;
+    background: linear-gradient(120deg,#eaf6ff,#ffffff,#eaf6ff);
+}
+
+.pharma-hero .container {
+    max-width: 900px;
+}
+
+.pharma-hero .eyebrow {
+    color: #0782ca;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.pharma-hero h1 {
+    color: #073d78;
+    font-size: clamp(36px,5vw,62px);
+    line-height: 1.15;
+    margin: 20px 0;
+}
+
+.pharma-hero p {
+    color: #62768b;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 700px;
+}
+
+.pharma-hero .btn,
+.pharma-cta .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 26px;
+    border-radius: 7px;
+    background: linear-gradient(100deg,#0878d1,#35b932);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: .3s ease;
+}
+
+.pharma-hero .btn:hover,
+.pharma-cta .btn:hover {
+    transform: translateY(-4px);
+}
+
+.pharma-list {
+    padding-left: 24px;
+    color: #536b82;
+    line-height: 2.2;
+    margin-top: 20px;
+}
+
+.process-timeline {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.process-step {
+    padding: 25px;
+    background: #f3f9fd;
+    border-radius: 14px;
+    border: 1px solid #e4edf5;
+}
+
+.process-step > span {
+    color: #0782ca;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.process-step h3 {
+    color: #073d78;
+    margin: 15px 0 10px;
+}
+
+.process-step p {
+    font-size: 14px;
+}
+
+.faq-item {
+    padding: 22px 25px;
+    margin: 15px 0;
+    border: 1px solid #e4edf5;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.faq-item h3 {
+    color: #073d78;
+    font-size: 18px;
+}
+
+.faq-item p {
+    margin-bottom: 0;
+}
+
+.pharma-cta {
+    margin: 30px 8% 75px;
+    padding: 55px 40px;
+    text-align: center;
+    border-radius: 20px;
+    background: linear-gradient(110deg,#073d78,#0878d1);
+    color: #ffffff;
+}
+
+.pharma-cta h2,
+.pharma-cta p {
+    color: #ffffff;
+}
+
+.pharma-cta h2 {
+    font-size: clamp(26px,3vw,38px);
+}
+
+.pharma-cta p {
+    line-height: 1.8;
+}
+
+.pharma-cta .btn {
+    background: #ffffff;
+    color: #0878d1;
+}
+
+.main-footer {
+    padding: 30px 8%;
+    text-align: center;
+    background: #062b51;
+    color: #ffffff;
+}
+
+.main-footer p {
+    margin: 8px 0;
+}
+
+@media(max-width:900px) {
+    .pharma-grid {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+
+    .process-timeline {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+}
+
+@media(max-width:600px) {
+    .pharma-section {
+        padding: 45px 6%;
+    }
+
+    .pharma-grid,
+    .process-timeline {
+        grid-template-columns: 1fr;
+    }
+
+    .pharma-hero {
+        min-height: 400px;
+        padding: 55px 6%;
+    }
+
+    .pharma-cta {
+        margin: 20px 5% 45px;
+        padding: 35px 22px;
+    }
+}
+
+
+
+
+
+
+/* LIQUID MANUFACTURING PAGE CSS FIX */
+
+.liquid-manufacturing-page {
+    padding-top: 0;
+    color: #173b60;
+    font-family: 'Inter', sans-serif;
+}
+
+.liquid-manufacturing-page .pharma-text-section {
+    padding: 70px 9%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.liquid-manufacturing-page .pharma-text-section.light-section {
+    max-width: none;
+    background: #f3f9fd;
+}
+
+.liquid-manufacturing-page .pharma-text-section h2 {
+    color: #073d78;
+    font-size: clamp(28px,3vw,40px);
+    margin: 18px 0;
+}
+
+.liquid-manufacturing-page .pharma-text-section p {
+    color: #62768b;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.liquid-manufacturing-page .pharma-text-section strong {
+    display: block;
+    color: #164d7c;
+    margin-top: 20px;
+}
+
+.liquid-manufacturing-page .pharma-text-section .pharma-list {
+    line-height: 2.2;
+    color: #536b82;
+    padding-left: 22px;
+}
+
+.liquid-manufacturing-page .pharma-section-heading {
+    max-width: 850px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.liquid-manufacturing-page .pharma-section-heading h2 {
+    color: #073d78;
+}
+
+.liquid-manufacturing-page .pharma-section-heading p {
+    line-height: 1.9;
+    color: #62768b;
+}
+
+.liquid-manufacturing-page .pharma-faq {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.liquid-manufacturing-page .pharma-faq details {
+    margin: 14px 0;
+    padding: 22px 25px;
+    background: #ffffff;
+    border: 1px solid #e4edf5;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(7,58,112,.04);
+}
+
+.liquid-manufacturing-page .pharma-faq summary {
+    color: #073d78;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.liquid-manufacturing-page .pharma-faq details p {
+    color: #62768b;
+    line-height: 1.8;
+    margin-top: 15px;
+}
+
+.liquid-manufacturing-page .pharma-hero {
+    min-height: 510px;
+}
+
+.liquid-manufacturing-page .pharma-hero-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.liquid-manufacturing-page .pharma-process {
+    background: #f4f9fd;
+}
+
+.liquid-manufacturing-page .pharma-process-content ul {
+    line-height: 2.2;
+}
+
+.liquid-manufacturing-page .pharma-enquiry {
+    margin: 30px 8% 80px;
+}
+
+@media(max-width:900px) {
+    .liquid-manufacturing-page .pharma-feature-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px) {
+    .liquid-manufacturing-page .pharma-text-section {
+        padding: 45px 6%;
+    }
+
+    .liquid-manufacturing-page .pharma-feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .liquid-manufacturing-page .pharma-hero-image img {
+        height: 260px;
+    }
+
+    .liquid-manufacturing-page .pharma-enquiry {
+        margin: 15px 5% 50px;
+        padding: 28px;
+    }
+}
+
+
+
+
+
+
+/* Ointment & Cream - Only New CSS */
+
+.ointment-manufacturing-page {
+    overflow-x: hidden;
+}
+
+.ointment-manufacturing-page .pharma-text-section {
+    padding: 85px 7%;
+}
+
+.ointment-manufacturing-page .light-section {
+    background: #f3f7fb;
+}
+
+.ointment-manufacturing-page .pharma-faq details {
+    background: #fff;
+    border: 1px solid #e0e9f1;
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 14px 0;
+}
+
+.ointment-manufacturing-page .pharma-faq details[open] {
+    box-shadow: 0 8px 25px rgba(20, 60, 90, 0.08);
+}
+
+.ointment-manufacturing-page .pharma-faq summary {
+    color: #16466e;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.ointment-manufacturing-page .pharma-faq details p {
+    color: #617487;
+    line-height: 1.8;
+    margin-top: 15px;
+}
+
+.ointment-manufacturing-page .pharma-enquiry {
+    text-align: center;
+    background: linear-gradient(120deg, #123b63, #087da2);
+    color: #fff;
+}
+
+.ointment-manufacturing-page .pharma-enquiry h2 {
+    max-width: 850px;
+    margin: 15px auto;
+}
+
+.ointment-manufacturing-page .pharma-enquiry p {
+    color: #e1edf5;
+    max-width: 750px;
+    margin: 15px auto;
+}
+
+.ointment-manufacturing-page .pharma-enquiry .pharma-kicker {
+    color: #a9e5f5;
+}
+
+.ointment-manufacturing-page .pharma-enquiry .pharma-actions {
+    justify-content: center;
+}
+
+.ointment-manufacturing-page .pharma-enquiry .pharma-btn {
+    background: #fff;
+    color: #12517b;
+}
+
+@media (max-width: 768px) {
+    .ointment-manufacturing-page .pharma-text-section {
+        padding: 55px 6%;
+    }
+
+    .ointment-manufacturing-page .pharma-enquiry {
+        padding: 55px 6%;
+    }
+}
+
+
+
+
+/* Ointment & Cream - Remaining CSS */
+
+.ointment-manufacturing-page .pharma-hero {
+    background: linear-gradient(120deg, #f1f7fc, #fff);
+}
+
+.ointment-manufacturing-page .pharma-hero-content h1 {
+    color: #123b63;
+}
+
+.ointment-manufacturing-page .pharma-hero-content p {
+    color: #53677b;
+    line-height: 1.8;
+}
+
+.ointment-manufacturing-page .pharma-hero-image img {
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 22px;
+    box-shadow: 0 20px 55px rgba(15,55,90,.14);
+}
+
+.ointment-manufacturing-page .pharma-section-heading {
+    color: #123b63;
+}
+
+.ointment-manufacturing-page .pharma-kicker {
+    color: #1686a9;
+}
+
+.ointment-manufacturing-page .pharma-overview p,
+.ointment-manufacturing-page .pharma-text-section p,
+.ointment-manufacturing-page .pharma-process p,
+.ointment-manufacturing-page .pharma-quality p {
+    color: #56697c;
+    line-height: 1.9;
+}
+
+.ointment-manufacturing-page .pharma-feature-card {
+    background: #fff;
+    border: 1px solid #e2ebf3;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 8px 28px rgba(24,65,100,.06);
+    transition: .3s ease;
+}
+
+.ointment-manufacturing-page .pharma-feature-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 16px 38px rgba(24,65,100,.12);
+}
+
+.ointment-manufacturing-page .pharma-feature-card h3 {
+    color: #16466e;
+}
+
+.ointment-manufacturing-page .pharma-feature-card p {
+    color: #617487;
+}
+
+.ointment-manufacturing-page .pharma-text-section ul {
+    padding-left: 23px;
+    margin-top: 22px;
+}
+
+.ointment-manufacturing-page .pharma-text-section li {
+    color: #53677b;
+    line-height: 1.9;
+    margin-bottom: 8px;
+}
+
+.ointment-manufacturing-page .pharma-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 28px;
+}
+
+.ointment-manufacturing-page .pharma-btn {
+    background: #126c98;
+    color: #fff;
+    border-radius: 7px;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.ointment-manufacturing-page .pharma-outline-btn {
+    color: #126c98;
+    border: 1px solid #126c98;
+    border-radius: 7px;
+    padding: 13px 24px;
+    text-decoration: none;
+}
+
+.ointment-manufacturing-page .pharma-faq {
+    padding: 85px 7%;
+}
+
+.ointment-manufacturing-page .pharma-enquiry {
+    padding: 85px 7%;
+}
+
+@media (max-width: 768px) {
+    .ointment-manufacturing-page .pharma-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .ointment-manufacturing-page .pharma-hero-image img {
+        height: 280px;
+    }
+
+    .ointment-manufacturing-page .pharma-faq {
+        padding: 55px 6%;
+    }
+
+    .ointment-manufacturing-page .pharma-feature-card {
+        padding: 23px;
+    }
+
+    .ointment-manufacturing-page .pharma-actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+
+
+/* =====================================
+   PHARMACEUTICAL FORMULATION DEVELOPMENT
+   ONLY PAGE-SPECIFIC CSS
+===================================== */
+
+.formulation-development-page {
+    overflow-x: hidden;
+}
+
+.formulation-development-page .light-section {
+    background: #f1f6fb;
+}
+
+.formulation-development-page .pharma-hero {
+    background: linear-gradient(120deg, #edf5fc, #ffffff);
+}
+
+.formulation-development-page .pharma-hero-content h1 {
+    color: #123b63;
+}
+
+.formulation-development-page .pharma-hero-image img {
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 22px;
+    box-shadow: 0 18px 45px rgba(20, 60, 95, .13);
+}
+
+.formulation-development-page .pharma-text-section {
+    padding: 85px 7%;
+}
+
+.formulation-development-page .pharma-text-section ul {
+    padding-left: 24px;
+    margin-top: 22px;
+}
+
+.formulation-development-page .pharma-text-section li {
+    color: #53677b;
+    line-height: 1.9;
+    margin-bottom: 9px;
+}
+
+.formulation-development-page .pharma-feature-card {
+    border: 1px solid #e1eaf2;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.formulation-development-page .pharma-feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(18, 59, 99, .11);
+}
+
+.formulation-development-page .pharma-faq {
+    padding: 85px 7%;
+}
+
+.formulation-development-page .pharma-faq details {
+    background: #fff;
+    border: 1px solid #e1eaf2;
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 14px 0;
+}
+
+.formulation-development-page .pharma-faq details[open] {
+    box-shadow: 0 8px 24px rgba(18, 59, 99, .08);
+}
+
+.formulation-development-page .pharma-faq summary {
+    color: #16466e;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.formulation-development-page .pharma-faq details p {
+    color: #617487;
+    line-height: 1.8;
+    margin-top: 14px;
+}
+
+.formulation-development-page .pharma-enquiry {
+    padding: 85px 7%;
+    text-align: center;
+    background: linear-gradient(120deg, #123b63, #087da2);
+    color: #fff;
+}
+
+.formulation-development-page .pharma-enquiry h2 {
+    max-width: 850px;
+    margin: 15px auto;
+}
+
+.formulation-development-page .pharma-enquiry p {
+    max-width: 750px;
+    margin: 15px auto;
+    color: #e1edf5;
+    line-height: 1.8;
+}
+
+.formulation-development-page .pharma-enquiry .pharma-kicker {
+    color: #a9e5f5;
+}
+
+.formulation-development-page .pharma-enquiry .pharma-actions {
+    justify-content: center;
+}
+
+.formulation-development-page .pharma-enquiry .pharma-btn {
+    background: #fff;
+    color: #12517b;
+}
+
+@media (max-width: 768px) {
+    .formulation-development-page .pharma-text-section,
+    .formulation-development-page .pharma-faq,
+    .formulation-development-page .pharma-enquiry {
+        padding: 55px 6%;
+    }
+
+    .formulation-development-page .pharma-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .formulation-development-page .pharma-hero-image img {
+        height: 280px;
+    }
+}
+
+
+
+
+
+/* =====================================
+   CONTRACT MANUFACTURING PAGE
+   ONLY PAGE-SPECIFIC CSS
+===================================== */
+
+.contract-manufacturing-page {
+    overflow-x: hidden;
+}
+
+.contract-manufacturing-page .light-section {
+    background: #f1f6fb;
+}
+
+.contract-manufacturing-page .pharma-hero {
+    background: linear-gradient(120deg, #edf5fc, #ffffff);
+}
+
+.contract-manufacturing-page .pharma-hero-content h1 {
+    color: #123b63;
+}
+
+.contract-manufacturing-page .pharma-hero-image img {
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 22px;
+    box-shadow: 0 18px 45px rgba(20, 60, 95, .13);
+}
+
+.contract-manufacturing-page #contract-services {
+    scroll-margin-top: 110px;
+}
+
+.contract-manufacturing-page .pharma-text-section {
+    padding: 85px 7%;
+}
+
+.contract-manufacturing-page .pharma-text-section ul {
+    padding-left: 24px;
+    margin-top: 22px;
+}
+
+.contract-manufacturing-page .pharma-text-section li {
+    color: #53677b;
+    line-height: 1.9;
+    margin-bottom: 9px;
+}
+
+.contract-manufacturing-page .pharma-feature-card {
+    border: 1px solid #e1eaf2;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.contract-manufacturing-page .pharma-feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(18, 59, 99, .11);
+}
+
+.contract-manufacturing-page .pharma-faq {
+    padding: 85px 7%;
+}
+
+.contract-manufacturing-page .pharma-faq details {
+    background: #fff;
+    border: 1px solid #e1eaf2;
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 14px 0;
+}
+
+.contract-manufacturing-page .pharma-faq details[open] {
+    box-shadow: 0 8px 24px rgba(18, 59, 99, .08);
+}
+
+.contract-manufacturing-page .pharma-faq summary {
+    color: #16466e;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.contract-manufacturing-page .pharma-faq details p {
+    color: #617487;
+    line-height: 1.8;
+    margin-top: 14px;
+}
+
+.contract-manufacturing-page .pharma-enquiry {
+    padding: 85px 7%;
+    text-align: center;
+    background: linear-gradient(120deg, #123b63, #087da2);
+    color: #fff;
+}
+
+.contract-manufacturing-page .pharma-enquiry h2 {
+    max-width: 850px;
+    margin: 15px auto;
+}
+
+.contract-manufacturing-page .pharma-enquiry p {
+    max-width: 750px;
+    margin: 15px auto;
+    color: #e1edf5;
+    line-height: 1.8;
+}
+
+.contract-manufacturing-page .pharma-enquiry .pharma-kicker {
+    color: #a9e5f5;
+}
+
+.contract-manufacturing-page .pharma-enquiry .pharma-actions {
+    justify-content: center;
+}
+
+.contract-manufacturing-page .pharma-enquiry .pharma-btn {
+    background: #fff;
+    color: #12517b;
+}
+
+@media (max-width: 768px) {
+    .contract-manufacturing-page .pharma-text-section,
+    .contract-manufacturing-page .pharma-faq,
+    .contract-manufacturing-page .pharma-enquiry {
+        padding: 55px 6%;
+    }
+
+    .contract-manufacturing-page .pharma-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .contract-manufacturing-page .pharma-hero-image img {
+        height: 280px;
+    }
+}
+
+
+
+
+/* INJECTABLE MANUFACTURING - PAGE SPECIFIC CSS */
+
+.injectable-manufacturing-page {
+    overflow-x: hidden;
+}
+
+.injectable-manufacturing-page .light-section {
+    background: #f1f6fb;
+}
+
+.injectable-manufacturing-page .pharma-hero {
+    background: linear-gradient(120deg, #eaf4fc, #ffffff);
+}
+
+.injectable-manufacturing-page .pharma-hero-content h1 {
+    color: #123b63;
+}
+
+.injectable-manufacturing-page .pharma-hero-image img {
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 22px;
+    box-shadow: 0 18px 45px rgba(20, 60, 95, 0.13);
+}
+
+.injectable-manufacturing-page #injectable-services {
+    scroll-margin-top: 110px;
+}
+
+.injectable-manufacturing-page .pharma-text-section {
+    padding: 85px 7%;
+}
+
+.injectable-manufacturing-page .pharma-text-section ul {
+    padding-left: 24px;
+    margin-top: 22px;
+}
+
+.injectable-manufacturing-page .pharma-text-section li {
+    color: #53677b;
+    line-height: 1.9;
+    margin-bottom: 9px;
+}
+
+.injectable-manufacturing-page .pharma-feature-card {
+    border: 1px solid #e1eaf2;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.injectable-manufacturing-page .pharma-feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(18, 59, 99, 0.11);
+}
+
+.injectable-manufacturing-page .pharma-faq {
+    padding: 85px 7%;
+}
+
+.injectable-manufacturing-page .pharma-faq details {
+    background: #fff;
+    border: 1px solid #e1eaf2;
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 14px 0;
+}
+
+.injectable-manufacturing-page .pharma-faq details[open] {
+    box-shadow: 0 8px 24px rgba(18, 59, 99, 0.08);
+}
+
+.injectable-manufacturing-page .pharma-faq summary {
+    color: #16466e;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.injectable-manufacturing-page .pharma-faq details p {
+    color: #617487;
+    line-height: 1.8;
+    margin-top: 14px;
+}
+
+.injectable-manufacturing-page .pharma-enquiry {
+    padding: 85px 7%;
+    text-align: center;
+    background: linear-gradient(120deg, #123b63, #087da2);
+    color: #fff;
+}
+
+.injectable-manufacturing-page .pharma-enquiry h2 {
+    max-width: 850px;
+    margin: 15px auto;
+}
+
+.injectable-manufacturing-page .pharma-enquiry p {
+    max-width: 750px;
+    margin: 15px auto;
+    color: #e1edf5;
+    line-height: 1.8;
+}
+
+.injectable-manufacturing-page .pharma-enquiry .pharma-kicker {
+    color: #a9e5f5;
+}
+
+.injectable-manufacturing-page .pharma-enquiry .pharma-actions {
+    justify-content: center;
+}
+
+.injectable-manufacturing-page .pharma-enquiry .pharma-btn {
+    background: #fff;
+    color: #12517b;
+}
+
+@media (max-width: 768px) {
+    .injectable-manufacturing-page .pharma-text-section,
+    .injectable-manufacturing-page .pharma-faq,
+    .injectable-manufacturing-page .pharma-enquiry {
+        padding: 55px 6%;
+    }
+
+    .injectable-manufacturing-page .pharma-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .injectable-manufacturing-page .pharma-hero-image img {
+        height: 280px;
+    }
+}
+

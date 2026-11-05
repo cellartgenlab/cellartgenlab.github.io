@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cellartgen | Admin CMS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/admin-premium.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="cms-body">
+
+<div class="auth-gate" id="authGate">
+  <div class="login-scene">
+
+    <section class="login-showcase">
+      <div class="login-logo">
+        <img src="img/CELL-ARTGEN.png" alt="Cellartgen">
+        <span>Cellartgen Lab Pvt. Ltd.</span>
+      </div>
+
+      <div class="login-intro">
+        
+        <h1>Welcome to<br>
+          <strong>Cellartgen Admin Panel</strong>
+        </h1>
+        <p>Manage your website content, media and customer data with ease.</p>
+      </div>
+
+      <div class="login-features">
+        <div><b class="lf-ico blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M3 17l5-5 4 4 3-3 6 5"/></svg></b><span>Manage Gallery</span></div>
+        <div><b class="lf-ico green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></b><span>View Enquiries</span></div>
+        <div><b class="lf-ico purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg></b><span>Track Careers</span></div>
+        <div><b class="lf-ico orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/></svg></b><span>Control Settings</span></div>
+      </div>
+
+      <h2 class="login-slogan">Together for Better Health</h2>
+    </section>
+
+    <section class="login-form-side">
+      <form class="auth-card" id="loginForm">
+
+        <div class="login-shield"><svg viewBox="0 0 64 72" aria-hidden="true"><path d="M32 3l26 9v22c0 17-11 28-26 35C17 62 6 51 6 34V12z" fill="url(#sg)" stroke="#fff" stroke-width="2"/><rect x="21" y="30" width="22" height="18" rx="3" fill="#fff"/><path d="M25 30v-5a7 7 0 0 1 14 0v5" fill="none" stroke="#fff" stroke-width="3.5"/><circle cx="32" cy="39" r="2.6" fill="#0b5fd8"/><defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#2d8cff"/><stop offset="1" stop-color="#0a49c2"/></linearGradient></defs></svg></div>
+
+        <h2>Admin <strong>Login</strong></h2>
+        <p>Sign in to access your dashboard</p>
+
+        <label class="login-input">
+          <span class="li-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg></span>
+          <input id="adminUser" name="user"
+            autocomplete="username" required
+            placeholder="Enter Username or Email">
+        </label>
+
+        <label class="login-input">
+          <span class="li-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span>
+          <input id="adminPass" name="pass"
+            type="password" autocomplete="current-password"
+            required placeholder="Enter Password">
+          <button type="button" class="pw-toggle" id="pwToggle" aria-label="Show password"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button>
+        </label>
+
+        <div class="remember">
+          <label>
+            <input type="checkbox" id="rememberMe" checked>
+            Remember Me
+          </label>
+          <a href="#" id="forgotPw">Forgot Password?</a>
+        </div>
+
+        <button id="loginSubmit" class="gold-button" type="submit">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg> Login Now
+        </button>
+
+        <div id="loginError" class="auth-error" role="alert"></div>
+
+        <div class="login-or"><span>or</span></div>
+
+        <a class="login-back-link" href="/">
+          Back to Website
+        </a>
+
+        <div class="login-secure">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l9 3v6c0 5.5-3.8 9.5-9 11-5.2-1.5-9-5.5-9-11V5z" fill="#1fa85a"/><path d="M8 12l3 3 5-6" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Secure &amp; Encrypted Access
+        </div>
+
+      </form>
+    </section>
+
+  </div>
+
+  <footer class="login-footer">
+    <span>Cellartgen Lab Pvt. Ltd. | Innovation for a Healthier Tomorrow</span>
+    <span>© 2026 Cellartgen. All Rights Reserved.</span>
+  </footer>
+</div>
+
+    <div class="app-shell">
+        <aside class="sidebar"><a class="side-brand" href="/admin"><img src="img/CELL-ARTGEN.png"
+                    alt=""><span>Cellartgen<small>LAB PVT. LTD.</small></span></a>
+            <nav id="sideNav"><a class="active" href="#dashboard"
+                    data-section="dashboard"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h5v-6h4v6h5V10"/></svg></i><span>Dashboard</span></a><a href="#pages"
+                    data-section="pages"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></i><span>Pages</span></a><a href="#expertise"
+                    data-section="expertise"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.5 5.5L20 10l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-1.5z"/></svg></i><span>Our Expertise</span></a><a href="#patented-apis"
+                    data-section="page-filter" data-pagekey="patented-apis.html"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></i><span>Patented
+                        APIs</span></a><a href="#faculty-tour" data-section="page-filter"
+                    data-pagekey="faculty tour.html"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg></i><span>Faculty Tour</span></a><a href="#our-science"
+                    data-section="page-filter" data-pagekey="our science.html"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6M10 3v6L4.5 19a2 2 0 0 0 1.8 3h11.4a2 2 0 0 0 1.8-3L14 9V3"/><path d="M7.5 15h9"/></svg></i><span>Our Science</span></a><a
+                    href="#media" data-section="media"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v12H4z"/><circle cx="12" cy="13" r="3.5"/></svg></i><span>Gallery</span></a><a href="#media"
+                    data-section="media"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="14" height="14" rx="2"/><path d="M7 21h12a2 2 0 0 0 2-2V9"/><path d="M3 15l4-4 5 5"/></svg></i><span>Media Library</span></a><a href="#settings"
+                    data-section="settings"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/></svg></i><span>Settings</span></a><a href="#enquiries"
+                    data-section="enquiries"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></i><span>Enquiries</span></a><a href="#careerApplications"
+                    data-section="careerApplications"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg></i><span>Career Applications</span></a><a href="#users"
+                    data-section="users"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2 20c.8-3.5 3.5-5.5 7-5.5s6.2 2 7 5.5"/><circle cx="17" cy="9" r="2.5"/><path d="M17 14c2.5 0 4.2 1.6 5 4"/></svg></i><span>Users</span></a><a href="#seo"
+                    data-section="settings"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-5-5"/></svg></i><span>SEO Tools</span></a><a href="#logout"
+                    id="sidebarLogout"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v9"/><path d="M6.3 6.8a8 8 0 1 0 11.4 0"/></svg></i><span>Logout</span></a></nav>
+            <div class="sidebar-foot">
+                <div class="premium"><b>Cellartgen</b><small>Pharmaceutical Excellence</small><a class="visit-site" href="/" target="_blank">Visit Website <span>→</span></a></div>
+            </div>
+        </aside>
+        <main class="main-area">
+            <header class="topbar">
+                <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle sidebar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+                <div class="crumb"><span>Cellartgen</span><small>/ Admin Panel</small></div>
+                <div class="top-tools"><input id="search" placeholder="Search images, videos, or keywords..."><span class="bell" title="Notifications"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 8 3 8H3s3-1 3-8"/><path d="M10.3 21a2 2 0 0 0 3.4 0"/></svg><em>3</em></span><span class="admin-avatar">A</span><span
+                        class="admin-name">Admin<small>Super Admin</small></span><button id="logoutBtn"
+                        class="logout-btn">Sign out</button></div>
+            </header>
+            <section class="dashboard-view" id="dashboardView">
+                <div class="page-heading">
+                    <div>
+                        <h1>Dashboard</h1>
+                        <p>Welcome back! Here's what's happening with your website.</p>
+                    </div>
+                    <div class="heading-right"><span id="today"></span><a class="live-button" href="/" target="_blank">↗
+                            Live Website</a></div>
+                </div>
+                <div class="stats-grid">
+                    <article class="stat-card"><span class="stat-icon">▣</span>
+                        <div><small>Total Pages</small><strong id="pageCount">—</strong><em>↗ Website content</em></div>
+                    </article>
+                    <article class="stat-card"><span class="stat-icon">✧</span>
+                        <div><small>Total Products</small><strong id="expertiseCount">—</strong><em>↗ Product
+                                catalogue</em></div>
+                    </article>
+                    <article class="stat-card"><span class="stat-icon">✉</span>
+                        <div><small>Enquiries</small><strong id="enquiryCount">—</strong><em>↗ Customer messages</em>
+                        </div>
+                    </article>
+                    <article class="stat-card"><span class="stat-icon">♙</span>
+                        <div><small>Career Applications</small><strong id="careerCount">—</strong><em>↗ Candidate
+                                submissions</em></div>
+                    </article>
+                    <article class="stat-card"><span class="stat-icon">▧</span>
+                        <div><small>Media Files</small><strong id="mediaCount">—</strong><em>↗ Image & video
+                                library</em></div>
+                    </article>
+                </div>
+                <div class="dash-grid">
+                    <article class="white-panel traffic-panel">
+                        <div class="panel-title">
+                            <h3>Website Activity</h3><span>● Published &nbsp; ○ Draft</span>
+                        </div>
+                        <div class="chart-wrap"><canvas id="activityChart"></canvas></div>
+                    </article>
+                    <article class="white-panel activity-panel">
+                        <div class="panel-title">
+                            <h3>Recent Activity</h3><a href="#pages" data-section="pages">View All</a>
+                        </div>
+                        <div class="activity-row"><b>✧</b>
+                            <div><strong>Website content</strong><small>Manage published pages and sections</small>
+                            </div>
+                        </div>
+                        <div class="activity-row"><b>▣</b>
+                            <div><strong>Product catalogue</strong><small>Update product details and images</small>
+                            </div>
+                        </div>
+                        <div class="activity-row"><b>✉</b>
+                            <div><strong>New enquiries</strong><small>Review customer messages</small></div>
+                        </div>
+                        <div class="activity-row"><b>▧</b>
+                            <div><strong>Media library</strong><small>Manage image and video files</small></div>
+                        </div>
+                    </article>
+                </div>
+                <div class="quick-grid"><button data-section="home-sections">✎ <b>Edit Home Page</b><small>Update
+                            homepage content</small></button><button data-section="products">▣ <b>Manage
+                            Products</b><small>Add / Edit products</small></button><button data-section="enquiries">✉
+                        <b>View Enquiries</b><small>Check new enquiries</small></button><button data-section="media">▧
+                        <b>Media Library</b><small>Manage images & files</small></button></div>
+            </section>
+            <section class="content-view" id="contentView">
+                <div class="page-heading">
+                    <div>
+                        <h1 id="cmsTitle">Home Page Sections</h1>
+                        <p id="cmsSubtitle">Manage all website content from one place.</p>
+                    </div><button class="primary-button" id="cmsAdd">＋ Add New</button>
+                </div>
+                <div class="section-shortcuts" id="sectionShortcuts"><button data-type="pages">All Pages</button><button
+                        data-type="expertise">Products & Expertise</button><button data-type="media">Media
+                        Library</button><button data-type="settings">Website Settings</button><button
+                        data-type="enquiries">Enquiries</button></div>
+                <div id="cmsNotice" class="notice" role="status"></div>
+                <div id="cmsList" class="cms-list">
+                    <p>Loading content…</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <div id="cmsModal" class="cms-modal" aria-hidden="true">
+        <div class="cms-modal-card">
+            <div class="modal-head">
+                <div><small>CONTENT MANAGEMENT</small>
+                    <h2 id="cmsFormTitle">Edit Content</h2>
+                </div><button type="button" id="cmsClose">×</button>
+            </div>
+            <form id="cmsEditorForm">
+                <div class="editor-layout">
+                    <div class="editor-fields"><label>Title / Name<input id="fTitle" required
+                                placeholder="Enter title"></label>
+                        <div class="two-col"><label>Page URL / Slug<input id="fSlug"
+                                    placeholder="home"></label><label>Category<input id="fCategory"
+                                    placeholder="Category"></label></div><label>Page / Section Key<input id="fPageKey"
+                                placeholder="index.html"></label><label>CSS Selector (for exact section
+                            publishing)<input id="fSelector" placeholder="#homeHeroHeading"></label><label>Short
+                            Description<textarea id="fShort" rows="2"></textarea></label><label>Hero Heading<input
+                                id="fHeroTitle"></label><label>Hero Subheading<textarea id="fHeroSubtitle"
+                                rows="2"></textarea></label><label>Full Description / Content<textarea id="fDescription"
+                                rows="5"></textarea></label><label>Section Text / Content<textarea id="fHtmlContent"
+                                rows="5"
+                                placeholder="Text to show in the selected website section"></textarea></label><label>Additional
+                            Sections<textarea id="fSections" rows="3"></textarea></label>
+                        <div class="two-col"><label>Benefits<textarea id="fBenefits"
+                                    rows="3"></textarea></label><label>Dosage Forms<input id="fDosage"></label></div>
+                        <label>Manufacturing Details<textarea id="fManufacturing" rows="3"></textarea></label>
+                        <div class="two-col"><label>Image URL<input id="fImageUrl"
+                                    placeholder="/img/example.jpg"></label><label>Upload Image<input type="file"
+                                    id="fImageFile" accept="image/*"></label></div><img id="fImagePreview" hidden
+                            class="image-preview" alt="Image preview">
+                        <div class="two-col"><label>Status<select id="fStatus">
+                                    <option value="draft">Draft</option>
+                                    <option value="published">Published</option>
+                                </select></label><label>SEO Title<input id="fSeoTitle"></label></div><label>SEO
+                            Keywords<input id="fKeywords"></label><label>Meta Description<textarea id="fMeta"
+                                rows="2"></textarea></label>
+                    </div>
+                    <aside class="editor-aside">
+                        <h3>Image Preview</h3><img id="editorAsideImage" src="img/banner.png" alt="Preview">
+                        <p>Upload a new image or paste an existing image URL.</p>
+                        <div class="publish-note">✓ Changes are saved to MongoDB. Published page sections are read by
+                            the website CMS bridge.</div>
+                    </aside>
+                </div>
+                <div class="modal-actions"><button type="button" id="cmsCancel"
+                        class="secondary-button">Cancel</button><button type="submit" id="cmsSave"
+                        class="primary-button">Save Changes</button></div>
+            </form>
+        </div>
+    </div>
+    <script src="js/admin.js"></script>
+    <script>
+        const titleMap = { 'home-sections': 'Home Page Sections', 'pages': 'Website Pages', 'products': 'Products Management', 'expertise': 'Our Expertise', 'media': 'Media Library', 'enquiries': 'Contact Enquiries', 'careerApplications': 'Career Applications', 'users': 'Users', 'settings': 'Website Settings' };
+        document.querySelectorAll('[data-section]').forEach(el => el.addEventListener('click', e => { e.preventDefault(); const key = el.dataset.section; document.querySelectorAll('#sideNav a').forEach(a => a.classList.toggle('active', a === el)); document.getElementById('dashboardView').style.display = key === 'dashboard' ? 'block' : 'none'; document.getElementById('contentView').style.display = key === 'dashboard' ? 'none' : 'block'; const pageKey = el.dataset.pagekey || (key === 'home-sections' ? 'index.html' : ''); const typeMap = { 'home-sections': 'pages', 'products': 'expertise', 'page-filter': 'pages' }; const type = typeMap[key] || key; const titleMap = { 'home-sections': 'Home Page Sections', 'pages': 'Website Pages', 'products': 'Our Expertise', 'expertise': 'Our Expertise', 'media': 'Cellartgen Media Library', 'enquiries': 'Contact Enquiries', 'careerApplications': 'Career Applications', 'users': 'Users', 'settings': 'Website Settings', 'page-filter': el.querySelector('span')?.textContent || 'Website Page' }; document.getElementById('cmsTitle').textContent = titleMap[key] || titleMap[type] || 'Content Manager'; document.getElementById('cmsSubtitle').textContent = key === 'page-filter' ? 'Manage this website page and its sections.' : 'Manage ' + (titleMap[key] || titleMap[type] || 'website content') + ' from your admin panel.'; window.cmsPageFilter = pageKey; if (window.setCmsType) window.setCmsType(type); }));
+        getEl('sidebarLogout')?.addEventListener('click', e => { e.preventDefault(); document.getElementById('logoutBtn')?.click(); });
+        document.querySelectorAll('#sectionShortcuts button').forEach(b => b.addEventListener('click', () => { document.querySelectorAll('#sectionShortcuts button').forEach(x => x.classList.toggle('active', x === b)); document.querySelector('#cmsTabs [data-type="' + b.dataset.type + '"]')?.click(); }));
+    </script>
+<script>
+document.querySelectorAll('#sideNav [data-section="media"]').forEach(a=>a.addEventListener('click',()=>document.querySelectorAll('#sideNav [data-section="media"]').forEach(x=>x.classList.add('active'))));
+document.getElementById('menuToggle')?.addEventListener('click',()=>document.body.classList.toggle('sidebar-collapsed'));
+document.getElementById('pwToggle')?.addEventListener('click',()=>{const p=document.getElementById('adminPass');if(p)p.type=p.type==='password'?'text':'password';});
+document.getElementById('forgotPw')?.addEventListener('click',e=>{e.preventDefault();const b=document.getElementById('loginError');if(b){b.textContent='Please contact the Super Admin to reset your password.';b.style.display='block';}});
+</script>
+</body>
+
+</html>
